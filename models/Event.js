@@ -17,7 +17,10 @@ const EventSchema = Schema({
     type: Date,
     required: true
   },
-  user: {
+  end: {
+      type: Date,
+      required: true
+  },user: {
     type: Schema.Types.ObjectId, // especificamos referencia
     ref: 'User',
     required: true

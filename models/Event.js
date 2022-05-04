@@ -14,11 +14,11 @@ const EventSchema = Schema({
     type: String,
   },
   start: {
-    type: String,
+    type: Date,
     required: true
   },
   end: {
-      type: String,
+      type: Date,
       required: true
   },
   user: {

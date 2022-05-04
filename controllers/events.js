@@ -103,9 +103,9 @@ const deleteEvent = async(req, res = response) => {
   const eventId = req.params.id;
   const uid = req.uid;
 
-  const event = await Event.findById(eventId);
 
   try {
+    const event = await Event.findById(eventId);
 
     if(!event) {
      return res.status(404).json({

@@ -20,7 +20,8 @@ const EventSchema = Schema({
   end: {
       type: Date,
       required: true
-  },user: {
+  },
+  user: {
     type: Schema.Types.ObjectId, // especificamos referencia
     ref: 'User',
     required: true

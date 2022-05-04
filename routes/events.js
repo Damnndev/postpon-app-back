@@ -10,7 +10,7 @@ const { Router } = require('express');
 const { check } = require('express-validator');
 
 const { fildValidate } = require('../middlewares/fild-validators');
-const { isDate } = require('../helpers/isDate');
+// const { isDate } = require('../helpers/isDate');
 const { validateJWT } = require('../middlewares/validar-jwt');
 const { getEvent, createEvent, updateEvent, deleteEvent} = require('../controllers/events');
 

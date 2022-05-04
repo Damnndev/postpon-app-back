@@ -45,9 +45,9 @@ router.post(
 // get renew para actualizar el JWT y verificar si el JWT es el correcto
 router.get(
   '/renew',
-  [
+
     validateJWT
-  ],
+  ,
   renewToken);
 
 
